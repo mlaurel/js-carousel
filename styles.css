@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .carousel {
@@ -54,16 +55,29 @@ body {
   padding: 0 .5rem;
   background-color: rgba(0, 0, 0, .1);
 }
+.carousel-button svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+    color: rgba(255, 255, 255, .2);
+    fill: currentColor;
+}
+.carousel-button svg:hover {
+    color: white;
+}
 
-.carousel-button:hover,
+.carousel-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+  outline: 1px solid black;
+  outline-color: rgba(255, 255, 255, .9);
+}
+
 .carousel-button:focus {
   color: white;
   background-color: rgba(0, 0, 0, .2);
 }
 
-.carousel-button:focus {
-  outline: 1px solid black;
-}
 
 .carousel-button.prev {
   left: 1rem;
